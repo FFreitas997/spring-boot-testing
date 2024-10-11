@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-testing-example
+
+  data:
+    mongodb:
+      username: francisco
+      password: 1234567890
+      host: localhost
+      port: 27017
+      database: studentdb
+      authentication-database: admin
+      uri: mongodb://francisco:1234567890@localhost/studentdb?ssl=false&authSource=admin
+
+server:
+  port: 8088

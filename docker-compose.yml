@@ -1,0 +1,16 @@
+services:
+
+  mongodb:
+    image: mongo
+    container_name: testing-example-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo:/data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: francisco
+      MONGO_INITDB_ROOT_PASSWORD: 1234567890
+
+volumes:
+  mongo:

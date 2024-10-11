@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      username: francisco
+      password: 1234567890
+      host: localhost
+      port: 27017
+      database: studentdbtest
+      authentication-database: admin
+      uri: mongodb://francisco:1234567890@localhost/studentdbtest?ssl=false&authSource=admin
