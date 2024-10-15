@@ -5,10 +5,12 @@ import com.ffreitas.springtestingexample.dto.StudentResponse;
 import com.ffreitas.springtestingexample.entity.Student;
 import com.ffreitas.springtestingexample.repository.StudentRepository;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 import java.util.Optional;
@@ -31,6 +33,7 @@ import static org.mockito.Mockito.*;
  */
 
 //@ActiveProfiles("test")
+//@ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudentServiceTest {
 
